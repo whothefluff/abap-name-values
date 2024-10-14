@@ -5,7 +5,7 @@ interface zif_name_value_pairs public.
            name type string,
            value type string,
          end of t_entry,
-         t_data type sorted table of zif_name_value_pairs=>t_entry with unique key name
+         t_data type sorted table of zif_name_value_pairs=>t_entry with unique key name value
                                                                    with non-unique sorted key by_val components value.
 
   "! <p class="shorttext synchronized" lang="EN">Returns the data as is</p>
